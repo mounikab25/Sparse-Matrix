@@ -28,9 +28,9 @@ jobs:
       - run:
           name: Build and Push Docker image
           command: |
-            docker build -t $DOCKERHUB_USERNAME/matrix-image:latest .
+            docker build -t $DOCKERHUB_USERNAME/sparse_matrix-image:latest .
             docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_PASSWORD 
-            docker push $DOCKERHUB_USERNAME/matrix-image:latest
+            docker push $DOCKERHUB_USERNAME/sparse_matrix-image:latest
  
 workflows:
   version: 2
