@@ -12,7 +12,7 @@ jobs:
       - run:
           name: Install Python dependencies
           command: |
-            pip install pytest  # Adjust based on your project
+            pip install pytest docker # Add other dependencies as needed 
  
       # Run tests
       - run:
@@ -37,3 +37,5 @@ workflows:
   test:
     jobs:
       - build
+
+
