@@ -18,8 +18,8 @@ jobs:
       - run:
           name: Run tests
           command: |
-            pytest test_sparse_recommender.py # Adjust based on your project structure and testing framework
-
+            pytest test_sparse_recommender.py 
+            
       # Start Docker daemon
       - setup_remote_docker:
           version: 19.03.13
